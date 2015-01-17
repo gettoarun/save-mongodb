@@ -1,6 +1,6 @@
 {
   "author": "Arun N. Kumar <gettoarun@gmail.com>",
-  "name": "save-mongodb",
+  "name": "save-tingodb",
   "description": "tingodb persistence engine for save",
   "version": "1.0.0",
   "tags": [
