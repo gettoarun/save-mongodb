@@ -1,5 +1,7 @@
 # save-tingodb - tingodb persistence engine for **save**
 
+# * Currently has tests failing.. I will look into this, as such the tingodb tingus driver does not appear to be a drop in replacement to the mongodb api.. Hmm...
+
 ## Installation
 
       npm install save-tingodb
@@ -57,6 +59,7 @@ contactStore.find({})
 
 ## Credits
 [Arun N. Kumar](https://github.com/gettoarun/), follow me on twitter [@gettoarun](http://twitter.com/gettoarun)
+
 [Paul Serby](https://github.com/serby/) for the original codebase, follow him on twitter [@serby](http://twitter.com/serby)
 
 ## Licence
