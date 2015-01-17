@@ -56,7 +56,8 @@ contactStore.find({})
 ```
 
 ## Credits
-[Paul Serby](https://github.com/serby/) follow me on twitter [@serby](http://twitter.com/serby)
+[Arun N. Kumar](https://github.com/gettoarun/), follow me on twitter [@gettoarun](http://twitter.com/gettoarun)
+[Paul Serby](https://github.com/serby/) for the original codebase, follow him on twitter [@serby](http://twitter.com/serby)
 
 ## Licence
 Licenced under the [New BSD License](http://opensource.org/licenses/bsd-license.php)
