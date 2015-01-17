@@ -1,9 +1,9 @@
-var Db = require('mongodb').Db
-  , Server = require('mongodb').Server
+var Db = require('tingodb')().Db
+  , Server = require('tingodb').Server
   , map = require('async').map
   , collection
   , idProperty = '_id'
-  , db = new Db('test', new Server('127.0.0.1', 27017, {}) , { fsync: true, w: 1 })
+  , db = new Db('/Users/arunkumar/testDB2', {})
   , assert = require('assert')
   , Stream = require('stream').Stream
   , streamAssert = require('stream-assert')
@@ -14,7 +14,7 @@ function getEngine(options, callback) {
     options = {}
   }
   collection.remove({}, function () {
-    callback(undefined, require('../lib/mongodb-engine')(collection, options))
+    callback(undefined, require('../lib/tingodb-engine')(collection, options))
   })
 }
 
@@ -34,7 +34,7 @@ function drop() {
 
 require('save/test/engine.tests')(idProperty, getEngine, connect, drop)
 
-describe('mongodb-engine', function () {
+describe('tingodb-engine', function () {
 
   after(drop)
 
@@ -79,7 +79,7 @@ describe('mongodb-engine', function () {
     })
   })
 
-  it('should callback with mongo errors', function (done) {
+  it('should callback with tingo errors', function (done) {
     getEngine(function (err, engine) {
       if (err) return done(err)
       engine.create({ a: 1 }, function (err, saved) {

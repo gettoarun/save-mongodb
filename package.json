@@ -1,7 +1,7 @@
 {
-  "author": "Paul Serby <paul@serby.net>",
+  "author": "Arun N. Kumar <gettoarun@gmail.com>",
   "name": "save-mongodb",
-  "description": "mongodb persistence engine for save",
+  "description": "tingodb persistence engine for save",
   "version": "1.0.0",
   "tags": [
     "database",
@@ -10,9 +10,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:serby/save-mongodb"
+    "url": "https://github.com/gettoarun/save-mongodb"
   },
-  "main": "lib/mongodb-engine",
+  "main": "lib/tingodb-engine",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -r should"
   },
@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "lodash": "^2.4.1",
-    "mongodb": "^1.4.28",
-    "through": "^2.3.6"
+    "through": "^2.3.6",
+    "tingodb": "^0.3.1"
   },
   "devDependencies": {
     "async": "^0.9.0",
